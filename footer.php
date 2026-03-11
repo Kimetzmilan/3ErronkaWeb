@@ -1,0 +1,1 @@
+<footer> - © 2026 SteelWave - <br> - Eskubide guztiak erreserbatuta - </footer>
