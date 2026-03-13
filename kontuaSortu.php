@@ -1,16 +1,13 @@
 <?php include 'header.php'; ?>
-<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="kontuaSortu.css">
     <div class="login-wrapper">
     <form class="login-box">
-        <h2>Saioa ireki</h2>
-
+        <h2>Kontua sortu</h2>
+        <p>Sartu datuak kontua sortzeko</p>
         <input type="text" placeholder="Erabiltzailea" required>
+        <input type="email" placeholder="Email" required>
         <input type="password" placeholder="Pasahitza" required>
-        <button type="submit">Sartu</button>
-    </form>
-    <form class="login-box">
-        <h3>Kontua sortu</h3><br>
-        <a href="kontuaSortu.php" class="btn">Sartu</a>
+        <button type="submit">Sortu</button>
     </form>
 </div>
  <?php include 'footer.php'; ?>

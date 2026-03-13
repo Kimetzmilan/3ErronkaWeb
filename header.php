@@ -13,14 +13,55 @@
 
   <body>
     
-<header>    
+<header>
     <div>
-      <img class="img" src="irudiak/SteelWave.png" alt="">
+        <img class="img" src="irudiak/SteelWave.png" alt="">
     </div>
-      <nav>
-      <a href="jokuak.php">Jokuak</a>
-      <a href="login.php">Kontua</a>
-      <a href="informazioa.php">Informazioa</a>
-      <a href="index.php">Index</a>
+
+    <nav>
+
+      <?php
+      if (isset($_POST["toggle"])) {
+
+      $xml = simplexml_load_file("daymode.xml");
+
+       if ((string)$xml->daymode === "gaua") {
+       $xml->daymode = "eguna";
+       } else {
+       $xml->daymode = "gaua";
+       }
+
+        $xml->asXML("daymode.xml");
+
+        header("Location: " . $_SERVER["PHP_SELF"]);
+        exit;
+        }
+
+        $xml = simplexml_load_file("daymode.xml");
+        $daymode = (string)$xml->daymode;
+
+        if ($daymode === "gaua") {
+        $icon = "🌙";
+        } else {
+        $icon = "☀️";
+        }
+        ?>
+
+        <form method="post">
+        <button type="submit" name="toggle" class="icon-btn">
+        <span class="icon"><?= $icon ?></span>
+        </button>
+        </form>
+
+        <a href="jokuak.php">Jokuak</a>
+        <a href="login.php">Kontua</a>
+        <a href="informazioa.php">Informazioa</a>
+
+
+        
+
+
+        <a href="index.php">Index</a>
+
     </nav>
 </header>
