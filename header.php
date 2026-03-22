@@ -11,14 +11,43 @@
     <title>index</title>
   </head>
 
-  <body>
+  <?php
+$xml = simplexml_load_file("daymode.xml");
+$daymode = (string)$xml->daymode;
+?>
+<body class="<?= $daymode ?>">
     
 <header>
     <div>
         <img class="img" src="irudiak/SteelWave.png" alt="">
     </div>
-
     <nav>
+      <?php
+      if (isset($_POST["toggle_lang"])) {
+
+      $xmlLang = simplexml_load_file("daymode.xml");
+
+      if ((string)$xmlLang->hizkuntza === "es") {
+          $xmlLang->hizkuntza = "eu";
+      } else {
+          $xmlLang->hizkuntza = "es";
+      }
+
+     $xmlLang->asXML("daymode.xml");
+
+     header("Location: " . $_SERVER["PHP_SELF"]);
+     exit;
+     }
+
+     $xmlLang = simplexml_load_file("daymode.xml");
+     $hizkuntza = (string)$xmlLang->hizkuntza;
+
+     if ($hizkuntza === "es") {
+       $iconLang = "🇪🇸";
+     } else {
+       $iconLang = "🇪🇺";
+     }
+?>
 
       <?php
       if (isset($_POST["toggle"])) {
@@ -46,7 +75,11 @@
         $icon = "☀️";
         }
         ?>
-
+        <form method="post">
+         <button type="submit" name="toggle_lang" class="icon-btn">
+         <span class="icon"><?= $iconLang ?></span>
+         </button>
+        </form>
         <form method="post">
         <button type="submit" name="toggle" class="icon-btn">
         <span class="icon"><?= $icon ?></span>

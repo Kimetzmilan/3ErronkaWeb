@@ -9,8 +9,10 @@ nav {
   background: #333;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   padding: 10px 0;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 nav a {
@@ -40,9 +42,68 @@ nav a:hover {
     padding: 0;
     margin-top: 0px;
     margin: 0;
+    color: white;
 }
 
 .icon-btn:hover {
     transform: scale(1.2);
     transition: 0.2s;
+}
+
+body.gaua {
+  background: #121212;
+  color: white;
+}
+
+body.gaua header {
+  background: #1e1e1e;
+}
+
+body.gaua nav {
+  background: #333;
+}
+
+body.gaua nav a {
+  color: white;
+}
+
+body.gaua .karta {
+  background: #1e1e1e;
+  color: white;
+}
+
+body.eguna {
+  background: #f2f2f2;
+  color: black;
+}
+
+body.eguna header {
+  background: #ffffff;
+  color: black;
+}
+
+body.eguna nav {
+  background: #dddddd;
+}
+
+body.eguna nav a {
+  color: black;
+}
+
+body.eguna .karta {
+  background: white;
+  color: black;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: inherit;
+}
+
+.icon-btn:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
 }

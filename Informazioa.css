@@ -89,3 +89,49 @@
   font-size: 15px;
   color: #333;
 }
+
+body.gaua .info-web {
+  background: #1e1e1e;
+  color: white;
+  box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+
+body.gaua .info-web h2 {
+  color: #ffffff;
+}
+
+body.gaua .info-web p {
+  color: #dddddd;
+}
+
+body.gaua .info-karta {
+  background: #2a2a2a;
+  color: white;
+  box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+
+body.gaua .info-karta h3 {
+  color: #ffffff;
+}
+
+body.gaua .lista-info li {
+  color: #e0e0e0;
+}
+
+body.gaua .separador {
+  background: linear-gradient(to right, #fff, #888);
+}
+
+body.eguna .info-web {
+  background: #ffffff;
+  color: #333;
+}
+
+body.eguna .info-karta {
+  background: #f4f4f4;
+  color: #1e1e1e;
+}
+
+body.eguna .lista-info li {
+  color: #333;
+}
