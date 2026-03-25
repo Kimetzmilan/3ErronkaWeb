@@ -1,2 +1,6 @@
 <link rel="stylesheet" href="footer.css">
-<footer> - © 2026 SteelWave - <br> - Eskubide guztiak erreserbatuta - </footer>
+
+<footer>
+    - <?= $text['footer_copy'] ?> - <br>
+    - <?= $text['footer_rights'] ?> -
+</footer>
