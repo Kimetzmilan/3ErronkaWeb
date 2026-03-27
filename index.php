@@ -2,11 +2,15 @@
 <link rel="stylesheet" href="index.css">
 
 <?php
+require 'konexioa.php';
+
 $config = simplexml_load_file("daymode.xml");
 $idioma = (string)$config->hizkuntza;
 
 include 'lang.php';
 $text = $lang[$idioma];
+
+$query = $conn->query("SELECT izena, irudia FROM bideojokoak WHERE garaia = 1");
 ?>
 
 <div class="contenedor">
@@ -16,24 +20,22 @@ $text = $lang[$idioma];
   $(document).ready(function(){
     $('.single-item').slick({
       autoplay: true,
-      autoplaySpeed:5000,
+      autoplaySpeed: 5000,
       speed: 600,
       arrows: false,
-      dots: true
+      dots: false
     });
   });
   </script>
 
   <div class="single-item">
-    <a href="jokuespezifikoa.php">
-      <div><img src="irudiak/Minecraft.jpg"></div>
-    </a>
-    <a href="jokuespezifikoa.php">
-      <div><img src="irudiak/Hollow.jpg"></div>
-    </a>
-    <a href="jokuespezifikoa.php">
-      <div><img src="irudiak/Island.jpg"></div>
-    </a>
+    <?php while ($row = $query->fetch_assoc()): ?>
+      <a href="jokuespezifikoa.php?juego=<?= urlencode($row['izena']) ?>">
+        <div>
+          <img src="irudiak/<?= htmlspecialchars($row['irudia']) ?>" alt="<?= htmlspecialchars($row['izena']) ?>">
+        </div>
+      </a>
+    <?php endwhile; ?>
   </div>
 
   <div class="tarjetas">

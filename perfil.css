@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: var(--bg);
+    color: var(--text);
+}
+
+:root {
+    --bg-dark: #121212;
+    --card-dark: #1e1e1e;
+    --text-dark: #ffffff;
+
+    --bg-light: #f2f2f2;
+    --card-light: #ffffff;
+    --text-light: #000000;
+
+    --accent: #ffcc00;
+}
+
+body.gaua {
+    --bg: var(--bg-dark);
+    --card: var(--card-dark);
+    --text: var(--text-dark);
+}
+
+body.eguna {
+    --bg: var(--bg-light);
+    --card: var(--card-light);
+    --text: var(--text-light);
+}
+
+.perfil-wrapper {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.perfil-header h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: var(--text);
+}
+
+.perfil-card {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    margin-bottom: 25px;
+}
+
+.perfil-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+body.eguna .perfil-item {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.label {
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.value {
+    font-weight: bold;
+}
+
+.estado.activo {
+    color: #4CAF50;
+}
+
+.estado.bloqueado {
+    color: #E53935;
+}
+
+.btn-volver,
+.btn-logout {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.btn-volver {
+    background: var(--accent);
+    color: black;
+}
+
+.btn-volver:hover {
+    background: #e6b800;
+}
+
+.btn-logout {
+    background: #e53935;
+    color: white;
+}
+
+.btn-logout:hover {
+    background: #c62828;
+}

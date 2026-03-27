@@ -1,12 +1,13 @@
 <?php
 $lang = [
     'eu' => [
+
         // Header.php
         'menu_jokuak' => 'Jokuak',
         'menu_kontua' => 'Kontua',
         'menu_info' => 'Informazioa',
         'menu_index' => 'Hasiera',
-        
+
         // Index.php
         'titulo' => 'Denboraldiko bideojokoak',
         'que_hacer' => 'Zer egin dezakezu?',
@@ -45,7 +46,7 @@ $lang = [
         'crear_cuenta_titulo' => 'Kontua sortu',
         'crear_cuenta_p' => 'Sartu datuak kontua sortzeko',
         'crear_usuario' => 'Erabiltzailea',
-        'crear_email' => 'Email',
+        'crear_email' => 'Emaila',
         'crear_pass' => 'Pasahitza',
         'crear_boton' => 'Sortu',
 
@@ -54,22 +55,38 @@ $lang = [
         'login_usuario' => 'Erabiltzailea',
         'login_pass' => 'Pasahitza',
         'login_boton' => 'Sartu',
-        
         'login_crear_titulo' => 'Kontua sortu',
         'login_crear_boton' => 'Sartu',
 
         // jokuespezifikoa.php
         'juego_info' => 'Informazioa',
+        'juego_nombre' => 'Izena',
         'juego_genero' => 'Generoa',
         'juego_plataformas' => 'Plataformak',
         'juego_extra' => 'Datu osagarriak',
         'juego_requisitos' => 'Eskakizun minimoak',
         'juego_fecha' => 'Argitaratze data',
+        'juego_precio' => 'Prezioa',
+        'juego_proveedor' => 'Hornitzailea',
         'plataforma_pc' => 'PC',
-        'plataforma_consolas' => 'kontsolak',
-        'plataforma_movil' => 'mobila',
-      ],
-  
+        'plataforma_consolas' => 'Kontsolak',
+        'plataforma_movil' => 'Mobila',
+
+        // perfil.php
+        'perfil_titulo' => 'Zure Profila',
+        'perfil_nombre' => 'Izena',
+        'perfil_email' => 'Emaila',
+        'perfil_estado' => 'Egoera',
+        'perfil_activo' => 'Aktibo',
+        'perfil_bloqueado' => 'Blokeatuta',
+        'perfil_volver' => 'Itzuli',
+        'perfil_logout' => 'Saioa itxi',
+
+        'chat_placeholder' => 'Idatzi zure mezua...',
+        'chat_enviar' => 'Bidali',
+        'chat_titulo' => 'Mezuak',
+    ],
+
     'es' => [
 
         // Header.php
@@ -77,7 +94,7 @@ $lang = [
         'menu_kontua' => 'Cuenta',
         'menu_info' => 'Información',
         'menu_index' => 'Inicio',
-        
+
         // Index.php
         'titulo' => 'Videojuegos de temporada',
         'que_hacer' => '¿Qué puedes hacer?',
@@ -88,7 +105,7 @@ $lang = [
         'baloratu_t' => 'Valorar:',
         'baloratu_p' => 'Puntuar juegos para cambiar sus estrellas.',
 
-        // Footer
+        // Footer.php
         'footer_copy' => '© 2026 SteelWave',
         'footer_rights' => 'Todos los derechos reservados',
 
@@ -125,19 +142,35 @@ $lang = [
         'login_usuario' => 'Usuario',
         'login_pass' => 'Contraseña',
         'login_boton' => 'Entrar',
-        
         'login_crear_titulo' => 'Crear cuenta',
         'login_crear_boton' => 'Entrar',
 
         // jokuespezifikoa.php
         'juego_info' => 'Información',
+        'juego_nombre' => 'Nombre',
         'juego_genero' => 'Género',
         'juego_plataformas' => 'Plataformas',
         'juego_extra' => 'Datos adicionales',
         'juego_requisitos' => 'Requisitos mínimos',
         'juego_fecha' => 'Fecha de lanzamiento',
+        'juego_precio' => 'Precio',
+        'juego_proveedor' => 'Proveedor',
         'plataforma_pc' => 'PC',
-        'plataforma_consolas' => 'consolas',
-        'plataforma_movil' => 'móvil',
-        ]
+        'plataforma_consolas' => 'Consolas',
+        'plataforma_movil' => 'Móvil',
+
+        // perfil.php
+        'perfil_titulo' => 'Tu Perfil',
+        'perfil_nombre' => 'Nombre',
+        'perfil_email' => 'Email',
+        'perfil_estado' => 'Estado',
+        'perfil_activo' => 'Activo',
+        'perfil_bloqueado' => 'Bloqueado',
+        'perfil_volver' => 'Volver',
+        'perfil_logout' => 'Cerrar sesión',
+
+        'chat_placeholder' => 'Escribe tu mensaje...',
+        'chat_enviar' => 'Enviar',
+        'chat_titulo' => 'Mensajes',
+    ]
 ];

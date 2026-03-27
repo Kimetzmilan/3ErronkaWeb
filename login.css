@@ -2,111 +2,73 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 120px); 
-    background: #f2f2f2;
-    padding-top: 20px;
+    min-height: calc(100vh - 140px);
+    padding: 20px;
+    background: var(--bg);
 }
 
 .login-box {
-    background: white;
-    padding: 15px;
+    width: 100%;
+    max-width: 340px;
+    background: var(--card);
+    padding: 20px;
     border-radius: 10px;
-    width: 320px;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    margin: 0 auto;
 }
 
 .login-box h2 {
     text-align: center;
-    margin-bottom: 20px;
-    color: #222;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: var(--text);
 }
 
 .login-box input {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     margin: 12px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    border-radius: 6px;
+    border: 1px solid var(--input-border);
+    background: var(--input-bg);
+    color: var(--text);
     font-size: 15px;
+    box-sizing: border-box;
 }
 
-.login-box button {
+.login-box button,
+.btn {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background: #ffcc00;
     color: black;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
-}
-
-.login-box button:hover {
-    background: #ffcc00;
-}
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #ffcc00;
-    color: black;
-    border-radius: 5px;
-    text-decoration: none;
     font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
 }
 
-.btn:hover {
-    background: #ffcc00;
+.btn {
+    text-decoration: none;
 }
 
-body.gaua .login-container {
-    background: #121212;
+body.gaua {
+    --bg: #121212;
+    --card: #1e1e1e;
+    --text: #ffffff;
+    --input-bg: #2a2a2a;
+    --input-border: #555;
 }
 
-body.gaua .login-box {
-    background: #1e1e1e;
-    color: white;
-    box-shadow: 0 0 10px rgba(255,255,255,0.1);
-}
-
-body.gaua .login-box h2 {
-    color: #ffffff;
-}
-
-body.gaua .login-box input {
-    background: #2a2a2a;
-    border: 1px solid #555;
-    color: white;
-}
-
-body.gaua .login-box input::placeholder {
-    color: #bbbbbb;
-}
-
-body.gaua .login-box button {
-    background: #ffcc00;
-    color: black;
-}
-
-body.gaua .btn {
-    background: #ffcc00;
-    color: black;
-}
-
-body.eguna .login-container {
-    background: #f2f2f2;
-}
-
-body.eguna .login-box {
-    background: white;
-    color: black;
-}
-
-body.eguna .login-box input {
-    background: white;
-    border: 1px solid #ccc;
-    color: black;
-}
-
-body.eguna .login-box input::placeholder {
-    color: #666;
+body.eguna {
+    --bg: #f2f2f2;
+    --card: #ffffff;
+    --text: #000000;
+    --input-bg: #ffffff;
+    --input-border: #ccc;
 }

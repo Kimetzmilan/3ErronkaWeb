@@ -12,6 +12,7 @@
 </head>
 
 <?php
+session_start();
 
 $config = simplexml_load_file("daymode.xml");
 $idioma = (string)$config->hizkuntza;
@@ -30,7 +31,6 @@ $text = $lang[$idioma];
 
     <nav>
         <?php
-        
         if (isset($_POST["toggle_lang"])) {
             if ($config->hizkuntza == "es") {
                 $config->hizkuntza = "eu";
@@ -42,10 +42,8 @@ $text = $lang[$idioma];
             exit;
         }
 
-        
         $iconLang = ($idioma === "es") ? "🇪🇸" : "🇪🇺";
 
-       
         if (isset($_POST["toggle"])) {
             $config->daymode = ($daymode === "gaua") ? "eguna" : "gaua";
             $config->asXML("daymode.xml");
@@ -53,7 +51,6 @@ $text = $lang[$idioma];
             exit;
         }
 
-       
         $icon = ($daymode === "gaua") ? "🌙" : "☀️";
         ?>
 
@@ -70,7 +67,15 @@ $text = $lang[$idioma];
         </form>
 
         <a href="jokuak.php"><?= $text['menu_jokuak'] ?></a>
-        <a href="login.php"><?= $text['menu_kontua'] ?></a>
+
+        <?php if (isset($_SESSION['izena'])): ?>
+            <a href="perfil.php">
+                <?= $_SESSION['izena'] ?>
+            </a>
+        <?php else: ?>
+            <a href="login.php"><?= $text['menu_kontua'] ?></a>
+        <?php endif; ?>
+
         <a href="informazioa.php"><?= $text['menu_info'] ?></a>
         <a href="index.php"><?= $text['menu_index'] ?></a>
 
