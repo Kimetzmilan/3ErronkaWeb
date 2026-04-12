@@ -103,5 +103,3 @@ if ($games && $games->num_rows > 0) {
 </div>
 
 <?php include 'footer.php'; ?>
-</body>
-</html>

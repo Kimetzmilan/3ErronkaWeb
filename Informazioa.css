@@ -11,7 +11,6 @@
   margin: auto;
 }
 
-
 .info-web h2 {
   margin-bottom: 15px;
   color: #1e1e1e;
@@ -19,13 +18,11 @@
   text-align: center;
 }
 
-
 .info-web p {
   margin-bottom: 20px;
   color: #333;
   text-align: center;
 }
-
 
 .mapa-contenedor {
   width: 100%;
@@ -42,10 +39,9 @@
   border: 0;
 }
 
-
 .info-bloques {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   margin-bottom: 40px;
 }
@@ -58,11 +54,13 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: center;
 }
+
 .iconos{
     width: 135px;
     height: auto;
     margin-bottom: 15px;
 }
+
 .separador {
   width: 100%;
   height: 4px;
@@ -75,7 +73,6 @@
   margin-bottom: 10px;
   color: #1e1e1e;
 }
-
 
 .lista-info {
   max-width: 700px;

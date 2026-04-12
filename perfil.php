@@ -72,6 +72,3 @@ $usuario = $result->fetch_assoc();
     </form>
 
 </div>
-
-</body>
-</html>

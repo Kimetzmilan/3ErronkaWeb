@@ -40,20 +40,21 @@ $query = $conn->query("SELECT izena, irudia FROM bideojokoak WHERE garaia = 1");
 
   <div class="tarjetas">
     <h2><?= $text['que_hacer'] ?></h2>
+    <div>
+      <div class="karta">
+        <h3><?= $text['descubrir_t'] ?></h3>
+        <p><?= $text['descubrir_p'] ?></p>
+      </div>
 
-    <div class="karta">
-      <h3><?= $text['descubrir_t'] ?></h3>
-      <p><?= $text['descubrir_p'] ?></p>
-    </div>
+      <div class="karta">
+        <h3><?= $text['iruzkin_t'] ?></h3>
+        <p><?= $text['iruzkin_p'] ?></p>
+      </div>
 
-    <div class="karta">
-      <h3><?= $text['iruzkin_t'] ?></h3>
-      <p><?= $text['iruzkin_p'] ?></p>
-    </div>
-
-    <div class="karta">
-      <h3><?= $text['baloratu_t'] ?></h3>
-      <p><?= $text['baloratu_p'] ?></p>
+      <div class="karta">
+        <h3><?= $text['baloratu_t'] ?></h3>
+        <p><?= $text['baloratu_p'] ?></p>
+      </div>
     </div>
   </div>
 </div>

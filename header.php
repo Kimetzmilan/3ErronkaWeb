@@ -26,7 +26,7 @@ $text = $lang[$idioma];
 
 <header>
     <div>
-        <img class="img" src="irudiak/SteelWave.png" alt="">
+        <img class="logo" src="irudiak/SteelWave.png">
     </div>
 
     <nav>
@@ -53,7 +53,6 @@ $text = $lang[$idioma];
 
         $icon = ($daymode === "gaua") ? "🌙" : "☀️";
         ?>
-
         <form method="post">
             <button type="submit" name="toggle_lang" class="icon-btn">
                 <span class="icon"><?= $iconLang ?></span>
@@ -65,8 +64,9 @@ $text = $lang[$idioma];
                 <span class="icon"><?= $icon ?></span>
             </button>
         </form>
-
-        <a href="jokuak.php"><?= $text['menu_jokuak'] ?></a>
+        <div class="sidebar" id="sidebar" onclick="closeNav()">
+            <a href="#" class="sidebarAtera" onclick="closeNav()">X</a>
+            <a href="jokuak.php"><?= $text['menu_jokuak'] ?></a>
 
         <?php if (isset($_SESSION['izena'])): ?>
             <a href="perfil.php">
@@ -78,6 +78,17 @@ $text = $lang[$idioma];
 
         <a href="informazioa.php"><?= $text['menu_info'] ?></a>
         <a href="index.php"><?= $text['menu_index'] ?></a>
-
+        </div>
+        <div class="openNav" onclick="openNav()">
+            <button class="openbtn">☰</button>
+        </div>
+        <script>
+            function openNav(){
+                document.getElementById("sidebar").style.width="75%";
+            }
+            function closeNav(){
+                document.getElementById("sidebar").style.width="0";
+            }
+        </script>
     </nav>
 </header>

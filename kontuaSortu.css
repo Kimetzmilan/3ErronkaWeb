@@ -1,20 +1,11 @@
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    min-height: calc(100vh - 140px);
-    padding: 20px;
-    background: var(--bg);
-}
-
 .login-box {
-    width: 100%;
+    width: 80%;
     max-width: 360px;
     background: var(--card);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 0 8px rgba(0,0,0,0.15);
-    margin: 0 auto; 
+    margin: 20px auto; 
 }
 
 .login-box h2 {

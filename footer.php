@@ -4,3 +4,6 @@
     - <?= $text['footer_copy'] ?> - <br>
     - <?= $text['footer_rights'] ?> -
 </footer>
+
+</body>
+</html>
