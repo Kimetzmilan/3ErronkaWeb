@@ -5,20 +5,23 @@
     <p><?= $text['info_kontaktua_p'] ?></p>
 
     <div class="info-bloques">
-        <div class="info-karta">
-            <h3><?= $text['info_emaila'] ?></h3>
-            <p>SteelWave@gmail.com</p>
-        </div>
+        <div class="kontaktu-datuak">
+            <div class="info-karta">
+                <h3><?= $text['info_emaila'] ?></h3>
+                <p>SteelWave@gmail.com</p>
+            </div>
 
-        <div class="info-karta">
-            <h3><?= $text['info_telefonoa'] ?></h3>
-            <p>+34 123 456 789</p>
-        </div>
+            <div class="info-karta">
+                <h3><?= $text['info_telefonoa'] ?></h3>
+                <p>+34 123 456 789</p>
+            </div>
 
-        <div class="info-karta">
-            <h3><?= $text['info_sareak'] ?></h3>
-            <img class="iconos" src="irudiak/Icono.png" alt="">
-            <img class="iconos" src="irudiak/Icono2.png" alt="">
+            <div class="info-karta">
+                <h3><?= $text['info_sareak'] ?></h3>
+                <img class="iconos" src="irudiak/Icono.png" alt="">
+                <img class="iconos" src="irudiak/Icono2.png" alt="">
+            </div>
+
         </div>
 
         <div class="separador"></div>
@@ -33,7 +36,7 @@
 
     <div class="separador"></div>
 
-    <div>
+    <div class="info-karta">
         <h2><?= $text['info_gehiago'] ?></h2>
         <p><?= $text['info_gehiago_p'] ?></p>
         <ul class="lista-info">

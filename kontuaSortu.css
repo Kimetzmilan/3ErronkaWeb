@@ -1,6 +1,5 @@
 .login-box {
     width: 80%;
-    max-width: 360px;
     background: var(--card);
     padding: 20px;
     border-radius: 12px;
@@ -65,4 +64,18 @@ body.eguna {
     --text: #000000;
     --input-bg: #ffffff;
     --input-border: #ccc;
+}
+
+@media(width>1405px){
+    .login-box{
+        width: 70%;
+    }
+
+    input::placeholder{
+        font-size: 25px;
+    }
+
+    input{
+        height: 50px;
+    }
 }

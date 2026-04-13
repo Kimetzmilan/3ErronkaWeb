@@ -39,14 +39,14 @@
   border: 0;
 }
 
-.info-bloques {
+.info-bloques, .info-bloques>.kontaktu-datuak{
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-bottom: 40px;
 }
 
-.info-karta {
+.info-karta{
   background: #f4f4f4;
   padding: 20px;
   padding-bottom: 0px;
@@ -131,4 +131,23 @@ body.eguna .info-karta {
 
 body.eguna .lista-info li {
   color: #333;
+}
+
+@media(width>1405px) {
+  .info-bloques>.kontaktu-datuak{
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+  }
+  .info-karta{
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+  }
+  .kontaktu-datuak>.info-karta{
+    width: 20%;
+  }
+  li{
+    list-style: none;
+  }
 }

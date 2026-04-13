@@ -12,8 +12,8 @@ header {
 
 .sidebar{
   width: 0;
-  height: 100%;
-  position: fixed;
+  height: auto;
+  position: absolute;
   z-index: 1;
   top: 16%;
   left: 0;
@@ -21,11 +21,13 @@ header {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-bottom: 10px;
 }
 
 .sidebarAtera{
   text-align: end;
-  padding: 15px;
+  padding-right: 25px;
+  padding-top: 5px;
 }
 
 nav {
@@ -101,4 +103,5 @@ body.eguna .sidebar{
 
 body.eguna nav a {
   color: black;
+  
 }

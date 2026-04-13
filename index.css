@@ -74,3 +74,12 @@ body.eguna .karta {
 .theme-btn:hover {
   transform: scale(1.2);
 }
+
+@media(width>1405px) {
+  .single-item{
+    width: 85%;
+  }
+  .single-item div>img{
+    height: 300px;
+  }
+}

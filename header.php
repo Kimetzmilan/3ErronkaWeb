@@ -53,38 +53,39 @@ $text = $lang[$idioma];
 
         $icon = ($daymode === "gaua") ? "🌙" : "☀️";
         ?>
-        <form method="post">
-            <button type="submit" name="toggle_lang" class="icon-btn">
-                <span class="icon"><?= $iconLang ?></span>
-            </button>
-        </form>
-
-        <form method="post">
-            <button type="submit" name="toggle" class="icon-btn">
-                <span class="icon"><?= $icon ?></span>
-            </button>
-        </form>
-        <div class="sidebar" id="sidebar" onclick="closeNav()">
-            <a href="#" class="sidebarAtera" onclick="closeNav()">X</a>
-            <a href="jokuak.php"><?= $text['menu_jokuak'] ?></a>
-
-        <?php if (isset($_SESSION['izena'])): ?>
-            <a href="perfil.php">
-                <?= $_SESSION['izena'] ?>
-            </a>
-        <?php else: ?>
-            <a href="login.php"><?= $text['menu_kontua'] ?></a>
-        <?php endif; ?>
-
         <a href="informazioa.php"><?= $text['menu_info'] ?></a>
         <a href="index.php"><?= $text['menu_index'] ?></a>
+        <a href="jokuak.php"><?= $text['menu_jokuak'] ?></a>
+
+        <div class="sidebar" id="sidebar" onclick="closeNav()">
+            <a href="#" class="sidebarAtera" onclick="closeNav()">X</a>
+
+            <?php if (isset($_SESSION['izena'])): ?>
+                <a href="perfil.php">
+                    <?= $_SESSION['izena'] ?>
+                </a>
+            <?php else: ?>
+                <a href="login.php"><?= $text['menu_kontua'] ?></a>
+            <?php endif; ?>
+
+            <form method="post">
+                <button type="submit" name="toggle_lang" class="icon-btn">
+                    <span class="icon"><?= $iconLang ?></span>
+                </button>
+            </form>
+
+            <form method="post">
+                <button type="submit" name="toggle" class="icon-btn">
+                    <span class="icon"><?= $icon ?></span>
+                </button>
+            </form>
         </div>
         <div class="openNav" onclick="openNav()">
             <button class="openbtn">☰</button>
         </div>
         <script>
             function openNav(){
-                document.getElementById("sidebar").style.width="75%";
+                document.getElementById("sidebar").style.width="100%";
             }
             function closeNav(){
                 document.getElementById("sidebar").style.width="0";
