@@ -124,7 +124,7 @@ $comentarios = $conn->query("
 
         <p><strong><?= $text['juego_precio'] ?>:</strong> <?= htmlspecialchars($game['prezioa']) ?> €</p>
 
-        <p><strong><?= $text['juego_proveedor'] ?>:</strong> <?= htmlspecialchars($game['hornitzailea']) ?></p>
+        <p><strong><?= $text['juego_proveedor'] ?>:</strong> <?= htmlspecialchars($game['sortzailea']) ?></p>
     </section>
 
     <?php if ($uid): ?>

@@ -10,7 +10,7 @@ $idioma = (string)$config->hizkuntza;
 include 'lang.php';
 $text = $lang[$idioma];
 
-$query = $conn->query("SELECT izena, irudia FROM bideojokoak WHERE garaia = 1");
+$query = $conn->query("SELECT izena, irudia FROM bideojokoak WHERE destakatua = 1");
 ?>
 
 <div class="contenedor">
