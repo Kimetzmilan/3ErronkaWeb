@@ -14,7 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $resultado = $stmt->get_result();
 
     if ($resultado->num_rows > 0) {
-        echo "Erabiltzailea edo emaila existitzen da.";
+        $_SESSION["sortzekoErrorea"]=1;
+        header("Location: kontuaSortu.php");
         exit;
     }
 

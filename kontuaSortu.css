@@ -50,6 +50,28 @@
     background: #e6b800;
 }
 
+#pop-up{
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: 25%;
+    left: 42.5%;
+    border-radius: 5px;
+}
+.pop-up_open{
+    visibility: visible;
+}
+.pop-up_close{
+    visibility: hidden;
+}
+
+#pop-up>p{
+    text-align: center;
+    font-size: large;
+    color: red;
+    margin: 2px;
+}
+
 body.gaua {
     --bg: #121212;
     --card: #1e1e1e;
@@ -58,12 +80,26 @@ body.gaua {
     --input-border: #555;
 }
 
+body.gaua #pop-up{
+    background-color: #555;
+}
+body.gaua #pop-up>a{
+    color: #ccc;
+}
+
 body.eguna {
     --bg: #f2f2f2;
     --card: #ffffff;
     --text: #000000;
     --input-bg: #ffffff;
     --input-border: #ccc;
+}
+
+body.eguna #pop-up{
+    background-color: #ffffff;
+}
+body.eguna #pop-up>a{
+    color: #000000;
 }
 
 @media(width>1405px){

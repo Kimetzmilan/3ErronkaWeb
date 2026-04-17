@@ -15,12 +15,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($resultado->num_rows === 1) {
         $row = $resultado->fetch_assoc();
 
-        if ($row['blokeoa'] == 1) {
-            echo "Kontua blokeatuta dago.";
+        if ($row['blokeoa'] == 1){
+            //Blokeatuta dagoenean
+            $_SESSION["loginErrorea"]=1;
+            header("Location: login.php");
             exit;
         }
 
-        if ($pasahitza === $row['pasahitza']) {
+        if ($pasahitza === $row['pasahitza']){
 
             $_SESSION['id'] = $row['id'];
             $_SESSION['izena'] = $row['izena'];
@@ -29,11 +31,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit;
 
         } else {
-            echo "Pasahitza okerra da.";
+            //Pasahitza oker sartzerakoan
+            $_SESSION["loginErrorea"]=2;
+            header("Location: login.php");
+            exit;
         }
-
     } else {
-        echo "Erabiltzailea ez da existitzen.";
+        //Erabiltzailea oker sartzerakoan
+        $_SESSION["loginErrorea"]=3;
+        header("Location: login.php");
+        exit;
     }
 }
 ?>

@@ -53,6 +53,10 @@ $text = $lang[$idioma];
 
         $icon = ($daymode === "gaua") ? "🌙" : "☀️";
         ?>
+        <div class="openNav" onclick="openNav()">
+            <button class="openbtn">⚙️</button>
+        </div>
+
         <a href="informazioa.php"><?= $text['menu_info'] ?></a>
         <a href="index.php"><?= $text['menu_index'] ?></a>
         <a href="jokuak.php"><?= $text['menu_jokuak'] ?></a>
@@ -81,7 +85,7 @@ $text = $lang[$idioma];
             </form>
         </div>
         <div class="openNav" onclick="openNav()">
-            <button class="openbtn">☰</button>
+            <button class="openbtn">⚙️</button>
         </div>
         <script>
             function openNav(){

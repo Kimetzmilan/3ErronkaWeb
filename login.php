@@ -19,6 +19,32 @@
             <button type="submit" class="btn"><?= $text['login_crear_boton'] ?></button>
         </form>
     </div>
+    <?php
+    $popup="pop-up_close";
+    $mezua="";
+    if($_SESSION["loginErrorea"]==1){
+        $popup="pop-up_open";
+        $mezua=$text['login_erabiltzaile_blokeatuta'];
+    }else if($_SESSION["loginErrorea"]==2){
+        $popup="pop-up_open";
+        $mezua=$text['login_pasahitz_oker'];
+    }else if($_SESSION["loginErrorea"]==3){
+        $popup="pop-up_open";
+        $mezua=$text['login_erabiltzaile_oker'];
+    }
+    $_SESSION["loginErrorea"]=0;
+    ?>
+    <div id="pop-up" class="<?= $popup ?>">
+        <a href="#" class="itxi">X</a>
+        <p><?= $mezua ?></p>
+    </div>
+
+    <script>
+        $(".itxi").click(function(){
+            $("#pop-up").removeClass("pop-up_open");
+            $("#pop-up").addClass("pop-up_close");
+        });
+    </script>
 
 </div>
 

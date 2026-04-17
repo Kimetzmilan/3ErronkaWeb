@@ -1,12 +1,6 @@
 <?php
-/* SERBIDEREA
 $host = "192.168.115.159";
 $user = "admin";
-$pass = "1MG32025";
-$db = "3erronka";
-*/
-$host = "localhost";
-$user = "root";
 $pass = "1MG32025";
 $db = "3erronka";
 

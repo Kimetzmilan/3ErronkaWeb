@@ -49,6 +49,7 @@ $lang = [
         'crear_email' => 'Emaila',
         'crear_pass' => 'Pasahitza',
         'crear_boton' => 'Sortu',
+        'kontua_sortzeko_errorea' => 'Idatzitako erabiltzailea sortuta zegoen',
 
         // login.php
         'login_titulo' => 'Saioa ireki',
@@ -57,6 +58,9 @@ $lang = [
         'login_boton' => 'Sartu',
         'login_crear_titulo' => 'Kontua sortu',
         'login_crear_boton' => 'Sartu',
+        'login_erabiltzaile_blokeatuta' => 'Erabiltzailea blokeatuta dago',
+        'login_pasahitz_oker' => 'Pasahitza gaizki idatzita dago',
+        'login_erabiltzaile_oker' => 'Erabiltzailearen izena gaizki idatzita dago',
 
         // jokuespezifikoa.php
         'juego_info' => 'Informazioa',
@@ -136,6 +140,7 @@ $lang = [
         'crear_email' => 'Correo electrónico',
         'crear_pass' => 'Contraseña',
         'crear_boton' => 'Crear',
+        'kontua_sortzeko_errorea' => 'El usuario ya existe',
 
         // login.php
         'login_titulo' => 'Iniciar sesión',
@@ -144,6 +149,9 @@ $lang = [
         'login_boton' => 'Entrar',
         'login_crear_titulo' => 'Crear cuenta',
         'login_crear_boton' => 'Entrar',
+        'login_erabiltzaile_blokeatuta' => 'El usuario esta blokeado',
+        'login_pasahitz_oker' => 'Ha escrito mal la contraseña',
+        'login_erabiltzaile_oker' => 'Ha escrito mal el nombre de usuario',
 
         // jokuespezifikoa.php
         'juego_info' => 'Información',

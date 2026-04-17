@@ -84,6 +84,11 @@ body.gaua nav a {
   color: white;
 }
 
+body.gaua .openbtn{
+  background: #333;
+  border-color: #333;
+}
+
 body.eguna {
   background: #f2f2f2;
   color: black;
@@ -102,6 +107,9 @@ body.eguna .sidebar{
 }
 
 body.eguna nav a {
-  color: black;
-  
+  color: black; 
+}
+body.eguna .openbtn{
+  background: #dddddd;
+  border-color: #dddddd;
 }

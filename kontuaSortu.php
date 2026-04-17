@@ -15,6 +15,26 @@
             <button type="submit"><?= $text['crear_boton'] ?></button>
         </form>
     </div>
+    <?php
+    $popup="pop-up_close";
+    $mezua="";
+    if($_SESSION["sortzekoErrorea"]==1){
+        $popup="pop-up_open";
+        $mezua=$text['kontua_sortzeko_errorea'];
+    }
+    $_SESSION["sortzekoErrorea"]=0;
+    ?>
+    <div id="pop-up" class="<?= $popup ?>">
+        <a href="#" class="itxi">X</a>
+        <p><?= $mezua ?></p>
+    </div>
+
+    <script>
+        $(".itxi").click(function(){
+            $("#pop-up").removeClass("pop-up_open");
+            $("#pop-up").addClass("pop-up_close");
+        });
+    </script>
 
 </div>
 
