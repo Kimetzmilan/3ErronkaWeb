@@ -20,6 +20,7 @@
         </form>
     </div>
     <?php
+    $_SESSION["loginErrorea"];
     $popup="pop-up_close";
     $mezua="";
     if($_SESSION["loginErrorea"]==1){
