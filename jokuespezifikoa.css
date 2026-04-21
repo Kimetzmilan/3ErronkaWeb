@@ -92,6 +92,24 @@ h1, h2, h3 {
   gap: 16px;
 }
 
+.chat-window>div>div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.denuntzia{
+  color:red;
+  font-size: small;
+  background: none;
+  border: none;
+}
+
+.nombre{
+  display:inline;
+}
+
 .msg {
   max-width: 95%;
   padding: 16px 18px;

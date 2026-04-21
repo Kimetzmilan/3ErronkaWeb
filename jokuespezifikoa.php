@@ -145,7 +145,15 @@ $comentarios = $conn->query("
                 $stars = round($puntu / 2);
             ?>
             <div class="<?= $clase ?>">
-                <p class="nombre"><?= htmlspecialchars($c['izena']) ?></p>
+                <div>
+                    <p class="nombre"><?= htmlspecialchars($c['izena']) ?></p>
+                    <?php if($clase=="msg msg-otro") : ?>
+                        <form action="denuntziaEgin.php" method="post">
+                            <input type="hidden" name="denuntzia" value="<?= $c["id"]?>">
+                            <button type="submit" class="denuntzia">Denuntziatu</button>
+                        </form>
+                    <?php endif;?>
+                </div>
 
                 <?php if ($puntu > 0): ?>
                 <p class="valoracion">
