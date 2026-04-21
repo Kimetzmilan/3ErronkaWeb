@@ -150,7 +150,7 @@ $comentarios = $conn->query("
                     <?php if($clase=="msg msg-otro") : ?>
                         <form action="denuntziaEgin.php" method="post">
                             <input type="hidden" name="denuntzia" value="<?= $c["id"]?>">
-                            <button type="submit" class="denuntzia">Denuntziatu</button>
+                            <button type="submit" class="denuntzia"><?= $text['denuntzia'] ?></button>
                         </form>
                     <?php endif;?>
                 </div>

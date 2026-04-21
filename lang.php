@@ -75,6 +75,7 @@ $lang = [
         'plataforma_pc' => 'PC',
         'plataforma_consolas' => 'Kontsolak',
         'plataforma_movil' => 'Mobila',
+        'denuntzia' => 'Denuntziatu',
 
         // perfil.php
         'perfil_titulo' => 'Zure Profila',
@@ -166,6 +167,7 @@ $lang = [
         'plataforma_pc' => 'PC',
         'plataforma_consolas' => 'Consolas',
         'plataforma_movil' => 'Móvil',
+        'denuntzia' => 'Denunciar',
 
         // perfil.php
         'perfil_titulo' => 'Tu Perfil',
