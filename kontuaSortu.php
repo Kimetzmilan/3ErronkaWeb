@@ -18,7 +18,9 @@
     <?php
     $popup="pop-up_close";
     $mezua="";
-    $_SESSION["sortzekoErrorea"]=null;
+    if(!isset($_SESSION["sortzekoErrorea"])){
+        $_SESSION["sortzekoErrorea"]=null;
+    }
     if($_SESSION["sortzekoErrorea"]==1){
         $popup="pop-up_open";
         $mezua=$text['kontua_sortzeko_errorea'];
